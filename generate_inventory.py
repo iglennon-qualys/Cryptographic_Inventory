@@ -204,7 +204,4 @@ if __name__ == '__main__':
             more_data = False
 
     print('Writing output file')
-    with open(f'{args.outputfile.split('.')[0]}.json', 'w') as f:
-        json.dump(full_inventory, f, indent=2)
-
     output_inventory(inventory=full_inventory, filename=args.outputfile)
