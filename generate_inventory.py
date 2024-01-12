@@ -110,6 +110,10 @@ def process_data(xmldata: str):
 
 
 def output_inventory(inventory: list, filename: str):
+
+    if filename.split('.')[len(filename.split('.'))-1] != 'xlsx':
+        filename = f'{filename}.xlsx'
+
     wb = Workbook()
     ws = wb.active
     ws.title = 'Cryptographic Inventory'
