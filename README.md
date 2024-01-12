@@ -6,6 +6,20 @@ This script downloads and deconstructs the results of QID 38116 to determine TLS
 services, the IP addresses and ports on which these services operate, and the individual ciphers contained in the cipher
 suites offered by those services.
 
+## Installation
+
+This script requires the following Python modules
+```
+requests
+openpyxl
+xmltojson
+```
+
+To install these packages using pip:
+
+```commandline
+pip -r requirements.txt
+```
 ## Usage
 
 ```
