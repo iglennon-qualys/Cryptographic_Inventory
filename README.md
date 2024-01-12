@@ -23,12 +23,12 @@ pip -r requirements.txt
 ## Usage
 
 ```
-generate_inventory.py [-h] [--username USERNAME] [--password PASSWORD] [--apiurl APIURL] [--outputfile OUTPUTFILE]
+python generate_inventory.py [-h] [--username USERNAME] [--password PASSWORD] [--apiurl APIURL] [--outputfile OUTPUTFILE]
 
 options:
   -h, --help            show this help message and exit
   --username USERNAME   API Username
-  --password PASSWORD   API Password
+  --password PASSWORD   API Password  (or '-' to enter password interactively)
   --apiurl APIURL       API Base URL (e.g. https://qualysapi.qualys.com)
   --outputfile OUTPUTFILE
                         Name of output file
