@@ -163,7 +163,7 @@ def output_inventory(inventory: list, filename: str):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--username', help='API Username')
-    parser.add_argument('--password', help='API Password')
+    parser.add_argument('--password', help='API Password (or \'-\' to enter password interactively)')
     parser.add_argument('--apiurl', help='API Base URL (e.g. https://qualysapi.qualys.com)')
     parser.add_argument('--outputfile', help='Name of output file')
 
